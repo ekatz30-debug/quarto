@@ -1,0 +1,19 @@
+---
+title: "My Second Quarto Document"
+format: html
+execute:
+echo: false
+---
+
+
+```{r}
+#| label: setup
+#| message: false
+library(tidyverse)
+```
+
+
+```{r}
+gplot(data = mtcars, aes(x = wt, y = mpg)) +
+  geom_point()
+```
